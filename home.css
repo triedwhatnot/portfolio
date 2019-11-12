@@ -359,6 +359,9 @@ font-size: 4em;
         text-align: center;
         margin-top: 10%;
         }
+        .my-work{
+            margin-top: 5%;
+        }
         .photo-image{
             width: 40%;
         }
@@ -366,7 +369,7 @@ font-size: 4em;
             flex-basis: 50%;
         }
         .resume, .projects{
-            margin-right: 20px;
+            margin-right: 10px;
         }
         .summary{
             width: 80%;
