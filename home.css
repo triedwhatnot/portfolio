@@ -367,6 +367,7 @@ font-size: 4em;
         }
         .about-info{
             flex-basis: 46%;
+            margin-top: -50px;
         }
         .resume, .projects{
             margin-right: 10px;
