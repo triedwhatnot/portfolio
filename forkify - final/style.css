@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 15px;
+ font-family: 'Be Vietnam', sans-serif;
+    color: black;
+    
+}
+
+.console{
+    height: 250vh ;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(201, 197, 99),#d87e56);
+}
+
+/*liked menu*/
+.liked-recipes{
+    position: absolute;
+    top: 9.3%;
+    left: 70%;
+    height: 80%;
+    width: 20%;
+}
+
+.display-liked{
+    z-index: 9999;
+}
+.liked-search-item{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background-color: #f8f8f8;
+    border: 1px solid #cb0000;
+    border-top: 0px;
+    cursor: pointer;
+}
+.liked-search-item:first-child{
+    border-top: 1px solid #cb0000;
+}
+
+.liked-item-image{
+    width: 20%;
+    height: 90%;
+    border-radius: 100%;
+    flex-basis: 30%;
+    margin-right: 5%;
+    overflow: hidden;
+    
+}
+.liked-item-name{
+   padding-left: 5%;
+    text-transform: uppercase;
+    flex-basis: 70%; 
+    font-size: 80%;
+}
+.liked-name-head{
+    color: #e35700;
+    font-weight: 600;
+}
+
+/*bottom*/
+.console-area{
+    background-color: transparent;
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.search-bar{
+    display: flex;
+    height: 70px;
+    background-color: #efefef;
+    align-items: center;
+    
+}
+
+.logo{
+    flex-basis: 17%;
+    height: 68%;
+    margin-left: 2%;
+    margin-right: 15%;
+}
+.logo-image{
+    width: auto;
+    height: 100%;
+   
+    
+}
+.search-text{
+
+    border-radius: 8% / 50%;
+    flex-basis: 30%;
+    height: 50%;
+    background-color: ;
+    margin-right: -5%;
+    border: 0;
+    padding-left: 4%;
+    
+    
+}
+.search-text::placeholder{
+    
+     font-family: 'Be Vietnam', sans-serif;
+   
+
+}
+.btn-search{
+    border-radius: 40% / 100% ;
+    flex-basis: 10%;
+    height: 50%;
+    border: 0;
+    background-image: linear-gradient(to right, rgb(221, 213, 38),rgb(255, 127, 72));
+    color: white;
+    font-family: 'Be Vietnam', sans-serif;
+    cursor: pointer;
+}
+.search-text:focus{
+    outline: none;
+}
+.btn-search:focus{
+    outline: none;
+}
+
+.icon-heart-search{
+    font-size: 250%;
+    margin-left: 25%;
+    color: #000;
+    cursor: pointer;
+}
+
+.ion-android-search{
+    margin-right: 10%;
+    font-size: 140%;
+    vertical-align:sub;   
+}
+.search-bar .display{
+    color:#ff4848;
+}
+
+
+/* SEARCH RESULT */
+.search-result{
+    display: flex;
+    height: 100%;
+    background-color: #ededed;
+}
+
+
+
+/* SEARCH LIST*/
+.search-list{
+    flex-basis: 27%;
+    background-color: #e2e2e2;
+}
+
+.search-item{
+    height: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.clicked{
+    background-color: #cccccc;
+}
+.item-image{
+    width: 20%;
+    height: 90%;
+    border-radius: 100%;
+    flex-basis: 30%;
+    margin-right: 5%;
+    overflow: hidden;
+    
+}
+.item-name{
+   padding-left: 5%;
+    text-transform: uppercase;
+    flex-basis: 70%; 
+    font-size: 80%;
+}
+.name-head{
+    color: #e35700;
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    
+}
+.button-left{
+    margin-top: 30%;
+    border: 0;
+    color: #e35700;
+    border-radius: 50% / 100%;
+    background-color: #fff;
+    padding: 3%;
+    cursor: pointer;
+    margin-left: 5%;
+    width: 35%;
+    margin-right: -40%;
+}
+.button-right{
+
+    margin-top: 30%;
+    border: 0;
+    color: #e35700;
+    padding: 3%;
+    border-radius: 50% / 100%;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 60%;
+    width: 35%;
+}
+
+
+
+
+
+/* SEARCH PARTICULAR*/
+
+.search-particular{
+
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    overflow: hidden;
+    
+}
+
+.particular-image{
+    
+    overflow: hidden;
+    height: 22%;
+}
+
+.img{
+    
+    height: 90%;
+    width: auto;
+   
+}
+.particular-name{
+    
+    background-image: linear-gradient(to right, rgb(221, 213, 38),rgb(255, 127, 72));
+    font-size: 150%;
+    word-spacing: 5px;
+    width: 90%;
+    margin-top: -8%;
+    margin-bottom: 5%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(-0deg);
+    padding: 1%;
+    border-radius: 20% / 100%;
+    transform: rotate(-3deg);
+}
+
+.particular-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    color: #eb0000;
+    font-size: 110%;
+}
+
+.particlar-time{
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 25%;
+}
+
+.particular-serving{
+    text-transform: uppercase;
+    margin-right: 10%;
+    width: 35%;
+}
+.ion-android-alarm-clock{
+    margin-right: 5%;
+}
+.ion-ios-people{
+    margin-right: 5%;
+}
+.ion-ios-minus-outline{
+    margin-right: 3%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.ion-ios-plus-outline{
+    cursor: pointer;
+}
+.particular-like-button{
+    color: rgb(21, 21, 21);
+    
+}
+
+
+.icon-heart-like{
+    font-size: 160%;
+    cursor: pointer;
+}
+.liked{
+    color: red;
+}
+
+
+.particular-ingredients{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.all-ingredients{
+    margin-top: 10%;
+    margin-bottom: 5% ;
+    display: flex;
+    flex-wrap: wrap;
+        margin-left: 12%;
+}
+
+.single-ingredient{
+    width: 40%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.ion-ios-checkmark-outline{
+    color: #ff4400;
+    margin-right: 7%;
+}
+
+.add-to-cart{
+    border: 0;
+    background-image: linear-gradient(to right, rgb(221, 213, 38),rgb(255, 127, 72));
+    color: white;
+    padding: 1% 3%;
+    border-radius: 15% / 100%;
+    text-transform: uppercase;
+    width: 60%; 
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.ion-android-cart{
+    margin-right: 2%;
+    font-size: 150%;
+}
+
+
+.particular-directions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.direction-heading{
+    font-size: 130%;
+    color: orangered;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    transform: rotate(-0deg);
+    border-bottom: 2px dotted orangered;
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 1%; 
+   
+}
+.direction-text{
+    margin-bottom: 2%;
+    margin-top: 3%;
+    text-align: center;
+    width: 90%;
+    
+}
+.direction-author{
+    font-weight: bold;
+    color: #0026a3;
+}
+.direction-button{
+    border: 0;
+    background-image: linear-gradient(to right, rgb(224, 216, 56) 5%,rgb(255, 113, 52));
+    color: white;
+    padding: 1% 1%;
+    border-radius: 15% / 100%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 30%;
+    font-size: 110%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.ion-arrow-right-b{
+    margin-left: 2%;
+}
+
+
+/* SHOPPING LIST*/
+
+.shopping-list{
+    flex-basis: 28%;
+    background-color: #e2e2e2;
+    padding: 1%;
+}
+
+
+.shopping-list-heading{
+    font-size: 170%;
+    font-weight: 600;
+    color: orangered;
+    margin-bottom: 20%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+    transform: rotate(-3deg);
+    word-spacing: 6px;
+    border: 4px dotted #3e3aba;
+    padding: 2px 0px;
+    
+}
+
+.shopping-list-item{
+    display: flex;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shopping-item-value{
+    width: 12%;
+    padding: 1%;
+    border: 0;
+    flex-basis: 13%;
+    margin-right: 5%;
+    text-align: center;
+    margin-left: 10%;
+    
+}
+.shopping-item-description{
+    flex-basis: 70%;
+    font-size: 80%;
+    margin-right: 1%;
+    text-transform: capitalize;
+    color: #eb0000;
+}
+
+.shopping-list-item:hover .shopping-item-description{
+    flex-basis: 60%;
+    transition: flex-basis 0.5s;
+}
+.shopping-list-item:hover .delete-icon{
+    flex-basis: 10%;
+    display: block;
+    transition: flex-basis 0.5s, display 0.5s;
+}
+
+.delete-icon{
+    display: none;
+    color: orangered;
+    cursor: pointer;
+}  
+                 
+.footer{
+
+    text-align: center;
+    position: absolute;
+    top: 100%;
+}   
+.footer-link{
+    color: #112490;
+    font-weight: 600;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+/* icon loader*/
+.loader{
+    margin-top: 30%;
+   
+    width: 0%;
+    font-size: 400%;
+    animation: loaderAnimate 1.5s infinite linear;
+    
+}
+
+.search-list .loader{
+     margin-left: 50%;
+}
+
+@keyframes loaderAnimate{
+    
+    from{
+        transform: rotate(0);
+    } 
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+

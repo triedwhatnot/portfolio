@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+  
+}
+
+.home-section{
+    height: 90vh;
+    position: relative;
+}
+
+/*navbar*/
+.navbar{
+background-color: rgb(185, 33, 71);
+position: sticky;
+top: 0%;
+z-index: 9999;
+height: 10%;
+display: flex;
+align-items: center;
+
+}
+.home-tab{
+    flex-basis: 5%;
+    margin-left: 2%;
+    margin-right: 58%;
+}
+
+.navbar-items{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.navbar-item:hover{
+    border-bottom: 1px solid ;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-icon{
+    display: none;
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    
+    cursor: pointer;
+}
+
+.menu-bar{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    position: relative;
+    display: none;
+    animation: menu-animate 0.3s ease 1;
+}
+
+@keyframes menu-animate{
+    0% {top: 100%;}
+    100% {top:0%;}
+}
+.menu-icon{
+    color: white;
+    font-size: 1.8em;
+    z-index: 9999;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+
+}
+
+.menu-items{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+
+}
+.menu-item{
+font-size: 2em;
+text-decoration: none;
+color: white;
+margin-bottom: 3%;
+
+}
+.menu-item:after{
+content: '';
+display: block;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width:350px;
+height: 0.3%;
+background-color: white;
+margin-top: 1%;
+
+}
+
+/*about section*/
+
+.about{
+height: 85vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #c5c5c5;
+background-image: linear-gradient(rgba(48, 45, 45, 0.37),rgb(48, 45, 45)),url(https://images.unsplash.com/photo-1517433456452-f9633a875f6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+background-size: cover;
+background-position: center;
+color: white;
+}
+
+.photo{
+
+flex-basis: 38%;
+text-align: end;
+margin-right: 2%;
+}
+.photo-image{
+height: auto;
+width: 70%;
+border-radius: 300%;
+opacity: 0.9;
+background-color: black;
+}
+
+.about-info{
+flex-basis: 58%;
+margin-right: 2%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.name{
+font-size: 2.5em;
+margin-bottom: 1%;
+font-weight: 500;
+word-spacing: 10px;
+letter-spacing: 1px;
+}
+.summary{
+    font-size: 1.5em;
+    margin-bottom: 2%;
+    font-weight: 500;
+letter-spacing: 1px;
+word-spacing: 1px;
+text-align: center;
+}
+.my-work{
+    display: flex;
+    margin-top: 5%;
+    }
+.resume{
+font-size: 0.9em;
+font-weight: 500;
+height: 120px;
+width: 120px;
+background-color: rgb(141, 111, 13);
+text-decoration: none;
+color:white;
+border-radius: 100%;
+text-align: center;
+padding-top: 13%;
+margin-bottom: 2%;
+margin-right: 40px;
+text-transform: uppercase;
+
+transition: background-color:hover 5s ease-in;
+}
+.resume:hover{
+    background-color: rgb(250, 197, 21);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+.projects{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(13, 66, 116);
+    text-decoration: none;
+    color:white;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 13%;
+    margin-bottom: 2%;
+    margin-right: 40px;
+    font-size: 0.9em;
+font-weight: 500;
+text-transform: uppercase;
+}
+.projects:hover{
+    background-color: rgb(16, 157, 192);;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-me{
+    font-size: 0.9em;
+    font-weight: 500;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(27, 121, 12);
+    text-decoration: none;
+    color:white;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 13%;
+    margin-bottom: 2%;
+text-transform: uppercase;
+
+}
+.about-me:hover{
+    background-color: rgb(99, 199, 17);
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+.about-text{
+    width: 80%;
+margin-bottom: 2%;
+}
+.contact{
+display: flex;
+width: 80%;
+margin-top: 5%;
+justify-content: flex-end;
+}
+.email{
+
+font-size: 1.2em;
+margin-right:2% ;
+}
+.mobile{
+  
+    font-size: 1.2em;
+}
+.fa-mobile-alt{
+margin-right: 10px;
+}
+.fa-envelope{
+    margin-right: 10px;
+}
+
+.social{
+display: flex;
+width: 80%;
+justify-content: flex-end;
+margin-top: 2%;
+}
+.about-linkedin{
+color: black;
+font-size: 4em;
+margin-right: 20px;
+}
+.about-github{
+color: black;
+font-size: 4em;
+}
+
+.about-linkedin:hover{
+    color: #4455ee;
+}
+.about-github:hover{
+    color: #6cc644;
+}
+
+
+
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(185, 33, 71);
+    height: 6vh;
+    z-index: 9999;
+    }
+    
+    .footer-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.8vh;
+    color: white;
+    text-align: center;
+    }
+    .name-link{
+    color: white;
+    }
+    
+    .footer-linkedin, .footer-github{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    margin-top: 0.8vh;
+    }
+    
+    .footer-linkedin:hover{
+        color: #148dc5;
+    }
+    .footer-github:hover{
+        color: #6cc644;
+    }
+    
+    .footer-linkedin{
+    right: 5%;
+    margin-right: 50px;
+    }
+    .footer-github{
+    right: 5%;
+    }
+    
+
+    
+@media screen and (max-width:1024px){
+    .home-tab{
+        margin-right: 50%;
+    }
+    .navbar-items{
+        flex-basis: 38%;
+    }
+    .photo{
+    flex-basis: 48%;
+    text-align: center;
+    }
+    .about-info{
+        flex-basis: 48%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .home-tab{
+        margin-right: 40%;
+    }
+    .navbar-items{
+        flex-basis: 48%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .photo{
+        flex-basis: 46%;
+        text-align: center;
+        margin-top: 5%;
+        }
+        .photo-image{
+            width: 40%;
+        }
+        .about-info{
+            flex-basis: 50%;
+        }
+    .navbar-items{
+        display: none;
+    }
+    .navbar-icon{
+        display: inline;
+    }
+    .footer{
+        font-size: 13px;
+    }
+}
+

@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+.about-section{
+    height: 84vh;
+    position: relative;
+    
+}
+/*navbar*/
+.navbar{
+    background-color: rgb(185, 33, 71);
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+    }
+    .home-tab{
+        flex-basis: 5%;
+        margin-left: 2%;
+        margin-right: 58%;
+    }
+    
+    .navbar-items{
+        flex-basis: 30%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .navbar-item{
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    
+    .navbar-item:hover{
+        border-bottom: 1px solid ;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .navbar-icon{
+        display: none;
+        color: white;
+        font-size: 1.8em;
+        position: absolute;
+        right: 4%;
+        top: 20%;
+        
+        cursor: pointer;
+    }
+    
+    .menu-bar{
+        height: 100vh;
+        width: 100vw;
+        background-color: gray;
+        position: relative;
+        display: none;
+        animation: menu-animate 0.3s ease 1;
+}
+
+@keyframes menu-animate{
+    0% {top: 100%;}
+    100% {top:0%;}
+}
+    .menu-icon{
+        color: white;
+        font-size: 1.8em;
+        z-index: 9999;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        cursor: pointer;
+    
+    }
+    
+    .menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    }
+    .menu-item{
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3%;
+    
+    }
+    .menu-item:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width:350px;
+    height: 0.3%;
+    background-color: white;
+    margin-top: 1%;
+    
+    }
+    
+    /*about*/
+
+
+/*about*/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about-intro{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-basis: 70%;
+}
+.intro{
+flex-basis: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.intro h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgb(185, 33, 71);
+}
+.intro p{
+    width: 80%;
+    text-align: center;
+}
+.linkedin-icon{
+    color: #148dc5;
+    font-size: 4em;
+    margin-right: 10px;
+}
+.social-icons{
+margin-top: 40px;    
+
+}
+.github-icon{
+    color: #6cc644;
+    font-size: 4em;
+    
+}
+.linkedin-icon:hover{
+    color: #0a4c6b;
+    transition: all 0.3s ease-in-out;
+}
+.github-icon:hover{
+    color: #427c29;
+    transition: all 0.3s ease-in-out;
+}
+.skills{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.skills h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgb(185, 33, 71);
+}
+.skills p{
+    width: 80%;
+    text-align: center;
+}
+.icons{
+display: flex;
+font-size: 8em;
+}
+
+.html-icon{
+margin-right: 20px; 
+color: #e34f26;
+}
+.css-icon{
+margin-right: 20px;
+color: #264de4
+}
+.js-icon{
+color: #F0DB4F;
+}
+.btn-resume{
+    
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(185, 33, 71);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(185, 33, 71);
+    font-size: 1.5em;
+    border-radius: 20px;
+    font-weight: 500;
+    padding-top: 3px;
+}
+
+.btn-resume:hover{
+    background-color: rgb(185, 33, 71);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(185, 33, 71);
+    height: 6vh;
+    z-index: 9999;
+    
+    }
+    
+    .footer-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.8vh;
+    color: white;
+    text-align: center;
+    }
+    .name-link{
+    color: white;
+    }
+    
+    .footer .fa-linkedin,.footer .fa-github{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    margin-top: 0.8vh;
+    }
+    
+    .footer .fa-linkedin:hover{
+        color: #148dc5;
+    }
+    .footer .fa-github:hover{
+        color: #6cc644;
+    }
+    
+    .footer .fa-linkedin{
+    right: 5%;
+    margin-right: 50px;
+    }
+    .footer .fa-github{
+    right: 5%;
+    }
+       
+    @media screen and (max-width:1024px){
+        .home-tab{
+            margin-right: 50%;
+        }
+        .navbar-items{
+            flex-basis: 38%;
+        }
+        .photo{
+        flex-basis: 48%;
+        text-align: center;
+        }
+        .about-info{
+            flex-basis: 48%;
+        }
+    }
+    
+    @media screen and (max-width:768px){
+        .home-tab{
+            margin-right: 40%;
+        }
+        .navbar-items{
+            flex-basis: 48%;
+        }
+       
+      
+        .navbar-items{
+            display: none;
+        }
+        .navbar-icon{
+            display: inline;
+        }
+        .about-intro{
+            flex-direction: column;
+        }
+        .icons{
+            font-size: 5em;
+        }
+        html{
+            font-size: 13px;
+        }
+        .btn-resume{
+            width: 110px;
+        height: 35px;
+        margin-top: 3%;
+        }
+        .social-icons{
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+    }
