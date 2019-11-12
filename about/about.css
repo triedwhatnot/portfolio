@@ -302,6 +302,8 @@ color: #F0DB4F;
         .social-icons{
             margin-top: 5%;
             margin-bottom: 5%;
+            width: 100%;
+            text-align: center;
         }  
         .skills{
             margin-top: 10%;
@@ -314,5 +316,6 @@ color: #F0DB4F;
             height: 35px;
             position: relative;
             margin-top: 60%;
+            margin-bottom: 30%;
         }
     }
