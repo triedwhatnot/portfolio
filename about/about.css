@@ -270,8 +270,14 @@ color: #F0DB4F;
         .intro p{
             font-size: 0.89937em;
         }
-        
+        .about-intro{
+            margin-bottom: 5%;
+            
+        }
+        .btn-resume{
+        margin-bottom: 50%;
     }
+}
     
     @media screen and (max-width:768px){
         html{
