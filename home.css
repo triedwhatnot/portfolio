@@ -357,13 +357,19 @@ font-size: 4em;
     .photo{
         flex-basis: 46%;
         text-align: center;
-        margin-top: 5%;
+        margin-top: 10%;
         }
         .photo-image{
             width: 40%;
         }
         .about-info{
             flex-basis: 50%;
+        }
+        .resume, .projects{
+            margin-right: 20px;
+        }
+        .summary{
+            width: 80%;
         }
     .navbar-items{
         display: none;

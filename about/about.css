@@ -318,4 +318,7 @@ color: #F0DB4F;
             margin-top: 20px;
             margin-bottom: 25px;
         }
+        .footer-text{
+            font-size: 0.9em;
+        }        
     }
