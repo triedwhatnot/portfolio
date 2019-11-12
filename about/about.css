@@ -118,14 +118,14 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    min-height: 85vh;
 }
 .about-intro{
     flex-basis: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-margin-top: 5%;
+ margin: 5%;
 }
 .intro{
 flex-basis: 50%;
@@ -205,10 +205,6 @@ color: #F0DB4F;
     position: relative;
 }
 .btn-resume{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: inline-block;
     width: 125px;
     height: 40px;
@@ -220,6 +216,7 @@ color: #F0DB4F;
     border-radius: 20px;
     font-weight: 500;
     padding-top: 3px;
+    margin-bottom: 30%;
 }
 
 .btn-resume:hover{
