@@ -288,6 +288,7 @@ color: #F0DB4F;
 
         /*about page specific*/
         .about-intro{
+            margin-top: 5%;
             flex-direction: column;
         }
         .icons{
