@@ -355,7 +355,7 @@ font-size: 4em;
         flex-direction: column;
     }
     .photo{
-        flex-basis: 46%;
+        flex-basis: 50%;
         text-align: center;
         margin-top: 10%;
         }
@@ -366,7 +366,7 @@ font-size: 4em;
             width: 40%;
         }
         .about-info{
-            flex-basis: 50%;
+            flex-basis: 46%;
         }
         .resume, .projects{
             margin-right: 10px;
