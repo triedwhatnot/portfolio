@@ -125,7 +125,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
- margin: 5%;
+    margin: 5%;
 }
 .intro{
 flex-basis: 50%;
@@ -202,7 +202,6 @@ color: #F0DB4F;
 }
 .btn{
     flex-basis: 30%;
-    position: relative;
 }
 .btn-resume{
     display: inline-block;
@@ -268,7 +267,7 @@ color: #F0DB4F;
             font-size: 0.89937em;
         }
         .about-intro{
-            margin-bottom: 5%;
+            margin-bottom: 6%;
             
         }
         .btn-resume{
