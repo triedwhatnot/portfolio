@@ -93,7 +93,7 @@ function displayRecipe(rData){
     
     for( var i= 0; i< (rData.ingredients.length<10? rData.ingredients.length:10); i++){
         
-        ingredientStr += `<div class="single-ingredient"><i class="ion-ios-checkmark-outline"></i>${ingredientsValue[i]} ${ingredientsText[i]}</div>
+        ingredientStr += `<div class="single-ingredient"><i class="far fa-check-circle ion-ios-checkmark-outline"></i>${ingredientsValue[i]} ${ingredientsText[i]}</div>
 `;
     }
     
@@ -108,9 +108,9 @@ function displayRecipe(rData){
                     
                     <div class="particular-description">
                     
-                        <div class="particlar-time"><i class="ion-android-alarm-clock"></i>${time} minutes</div>
-                        <div class="particular-serving"><i class="ion-ios-people"></i> ${serving} servings <i class="ion-ios-minus-outline"></i><i class="ion-ios-plus-outline"></i></div>
-                        <div class="particular-like-button"><i class="ion-ios-heart icon-heart-like ${isLiked}"></i></div>
+                        <div class="particlar-time"><i class="far fa-clock ion-android-alarm-clock"></i>${time} minutes</div>
+                        <div class="particular-serving"><i class="fas fa-user-friends ion-ios-people"></i> ${serving} servings <i class="fas fa-minus-circle ion-ios-minus-outline"></i><i class="fas fa-plus-circle ion-ios-plus-outline"></i></div>
+                        <div class="particular-like-button"><i class="fas fa-heart icon-heart-like ${isLiked}"></i></div>
                     </div>
                     
                     
@@ -118,14 +118,14 @@ function displayRecipe(rData){
                         <div class="all-ingredients">
                             ${ingredientStr}
                         </div>
-                        <button type="button" class="add-to-cart" id="cart-button"><i class="ion-android-cart"></i> Add to my shopping list</button>
+                        <button type="button" class="add-to-cart" id="cart-button"><i class="fas fa-shopping-cart ion-android-cart"></i> Add to my shopping list</button>
                     </div>
                 
                     <div class="particular-directions">
                     
                             <div class="direction-heading">HOW TO COOK IT</div>
                             <div class="direction-text">This recipe was carefully designed and tested by <span class="direction-author">${rData.publisher}.</span> Please check out directions at their website.</div>
-                            <a class="direction-button" href =${rData.publisher_url} target = "_blank">DIRECTIONS <i class="ion-arrow-right-b"></i></a>                                       
+                            <a class="direction-button" href =${rData.publisher_url} target = "_blank">DIRECTIONS <i class="fas fa-caret-right ion-arrow-right-b"></i></a>                                       
                     </div>`;
     
     removeLoader('search-particular');
@@ -171,7 +171,7 @@ function updateUISearchList(resultArray, page = 1){
     //first page  - right
      if(page === 1){
             
-         var rightButton = `<div class = 'buttons'><button type="button" class="button-right" id = "right">Page ${page+1} <i class="ion-arrow-right-b right-page"></i></button></div>`;
+         var rightButton = `<div class = 'buttons'><button type="button" class="button-right" id = "right">Page ${page+1} <i class="fas fa-caret-right"></i></button></div>`;
          
          
            document.querySelector('.search-list').insertAdjacentHTML('beforeend',rightButton);
@@ -182,7 +182,7 @@ function updateUISearchList(resultArray, page = 1){
     //middle page -  left n right
      if(page === 2){
             
-         var leftButton = `<div class = 'buttons'><button type="button" class="button-left" id="left"><i class="ion-arrow-left-b left-page"></i> Page ${page-1}</button><button type="button" class="button-right" id="right">Page ${page+1} <i class="ion-arrow-right-b right-page"></i></button></div>`; 
+         var leftButton = `<div class = 'buttons'><button type="button" class="button-left" id="left"><i class="fas fa-caret-left"></i> Page ${page-1}</button><button type="button" class="button-right" id="right">Page ${page+1} <i class="fas fa-caret-right"></i></button></div>`; 
          
          document.querySelector('.search-list').insertAdjacentHTML('beforeend',leftButton);
         // document.querySelector('.search-list').insertAdjacentHTML('beforeend',rightButton);
@@ -192,7 +192,7 @@ function updateUISearchList(resultArray, page = 1){
     //last page   - left
      if(page === 3){
      
-         var leftButton =`<div class = 'buttons'><button type="button" class="button-left" id="left"><i class="ion-arrow-left-b left-page"></i> Page ${page-1}</button><div>`;
+         var leftButton =`<div class = 'buttons'><button type="button" class="button-left" id="left"><i class="fas fa-caret-left"></i> Page ${page-1}</button><div>`;
          
          document.querySelector('.search-list').insertAdjacentHTML('beforeend',leftButton);
        
@@ -254,7 +254,7 @@ function displayCart(){
             var str = `<div class="shopping-list-item" id=${i}>
                    <input type="number" class="shopping-item-value" value = ${ingredientsValue[i]}>
                     <div class="shopping-item-description">${ingredientsText[i]}</div>
-                    <i class="ion-close-circled delete-icon"></i>
+                    <i class="far fa-times-circle delete-icon"></i>
                </div>`;
     
     document.querySelector('.shopping-list-items').insertAdjacentHTML('beforeend',str);
@@ -286,7 +286,7 @@ function getInput(){
 
 function renderLoader(parent){
     
-    var str = `<div class="loader"><i class="ion-refresh"></i></div>`;
+    var str = `<div class="loader"><i class="fas fa-sync-alt"></i></div>`;
     
     document.querySelector(`.${parent}`).insertAdjacentHTML('afterbegin',str);
 }
@@ -317,7 +317,7 @@ function updateUIservings(){
     
     
     
-    document.querySelector('.particular-serving').innerHTML = `<i class="ion-ios-people"></i> ${serving} servings <i class="ion-ios-minus-outline"></i><i class="ion-ios-plus-outline"></i>`;
+    document.querySelector('.particular-serving').innerHTML = `<i class="fas fa-user-friends ion-ios-people"></i> ${serving} servings <i class="fas fa-minus-circle ion-ios-minus-outline"></i><i class="fas fa-plus-circle ion-ios-plus-outline"></i>`;
     
     
     
@@ -325,7 +325,7 @@ function updateUIservings(){
     
     for( var i= 0; i< (recipeData.data.recipe.ingredients.length<10? recipeData.data.recipe.ingredients.length:10); i++){
         
-        ingredientStr += `<div class="single-ingredient"><i class="ion-ios-checkmark-outline"></i>${ingredientsValue[i]} ${ingredientsText[i]}</div> `;
+        ingredientStr += `<div class="single-ingredient"><i class="far fa-check-circle ion-ios-checkmark-outline"></i>${ingredientsValue[i]} ${ingredientsText[i]}</div> `;
     }
     
     document.querySelector('.all-ingredients').innerHTML = ingredientStr;
